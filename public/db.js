@@ -12,7 +12,7 @@ request.onsuccess = function(event) {
   db = event.target.result;
 
   // check if app is online before reading from db
-  if (navigator.onLine) {
+  if (navigator.online) {
     checkDatabase();
   }
 };
