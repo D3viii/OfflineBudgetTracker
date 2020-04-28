@@ -1,6 +1,6 @@
 const express = require("express");
 const logger = require("morgan");
-const mongoose = require("mongoose");
+const Mongoose = require("mongoose");
 const compression = require("compression");
 
 const PORT = 3000;
@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+Mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
