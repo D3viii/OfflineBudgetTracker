@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds131826.mlab.com:31826/heroku_v8q792bt", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://<heroku_v8q792bt>:<heroku_v8q792bt>@ds131826.mlab.com:31826/heroku_v8q792bt", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
